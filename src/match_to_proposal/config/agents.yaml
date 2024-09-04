@@ -1,3 +1,12 @@
+pdf_to_md_converter:
+  role:
+    pdf file to md file converter
+  goal:
+    convert the pdf files in data directory into md files
+  backstory:
+    you are an expert in converting pdf files into markdown format.     
+
+
 job_description_reader:
   role: >
     job description Reader
