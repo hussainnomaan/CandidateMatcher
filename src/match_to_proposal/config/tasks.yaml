@@ -1,3 +1,9 @@
+conversion_task:
+  description:
+    Before starting any process first convert the given pdf files in data/CVs directory into md files 
+    using the convert_pdf_to_md function in main.py file then store the converted files into same location
+
+
 read_job_description_task:
   description: >
     Extract relevant information from the given job description. Focus on skills, experience,
@@ -6,7 +12,7 @@ read_job_description_task:
     work history, and educational background.
 
 
-    CSV file: {path_to_jobs_csv}
+    md file: {path_to_jobs_md}
   expected_output: >
     A structured summary of the job_description, including:
     -Key Features
@@ -14,19 +20,24 @@ read_job_description_task:
 
 match_candidate_task:
   description: >
-    Given job description match the best fit candidate from the cv.md,cv2.md,cv3.md,cv4.md,cv5.md  files
-    Evaluate how well the candidate's profiles fit with the job description from Jobs CSV file,
+    
+    Given job description match the best fit candidate from the Ashish_tandon.md,
+    Guru_sharan.md,
+    Vikas Resume (1).md,
+    VInayPvvsr (1).md, 
+    Viviek_chabra.md,   files
+    Evaluate how well the candidate's profiles fit with the job description from Jobs md file,
     focusing on the alignment of skills, work history, and key achievements
     with the job requirements.
 
 
-    Jobs CSV file: {path_to_jobs_csv}
+    Jobs md file: {path_to_jobs_md}
 
-    cv.md: {path_to_cv}
-    cv2.md: {path_to_cv2}
-    cv3.md: {path_to_cv3}
-    cv4.md: {path_to_cv4}
-    cv5.md: {path_to_cv5}
+    Ashish_tandon.md: {path_to_cv_0}
+    Guru_sharan.md: {path_to_cv_1}
+    Vikas Resume (1).md: {path_to_cv_2}
+    VInayPvvsr (1).md: {path_to_cv_3}
+    Viviek_chabra.md: {path_to_cv_4}
 
   expected_output: >
     A ranked list of top 3 candidates that best match the job description, including:
